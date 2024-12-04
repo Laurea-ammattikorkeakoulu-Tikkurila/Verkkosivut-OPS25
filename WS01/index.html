@@ -221,6 +221,76 @@
         </section>
         <section id="workshop4">
             <h2>Workshop 4: Advanced CSS</h2>
+            <p>In this workshop, you will learn advanced CSS techniques to enhance your web pages.</p>
+            <h3>Task 1: CSS Transitions</h3>
+            <p>Add a transition effect to an element when it changes state, such as on hover. Example:</p>
+            <pre><code>button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }</code></pre>
+            <h3>Task 2: CSS Animations</h3>
+            <p>Create a simple animation using CSS. Example:</p>
+            <pre><code>@keyframes example {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }</code></pre>
+            <h3>Task 3: CSS Flexbox</h3>
+            <p>Use Flexbox to create a flexible layout. Example:</p>
+            <pre><code>.flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .flex-item {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }</code></pre>
+            <h3>Task 4: CSS Grid</h3>
+            <p>Use CSS Grid to create a grid layout. Example:</p>
+            <pre><code>.grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+        }
+        
+        .grid-item {
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+        }</code></pre>
+            <h3>Bonus Task: CSS Variables</h3>
+            <p>Use CSS variables to manage colors and other styles more efficiently. Example:</p>
+            <pre><code>:root {
+            --main-bg-color: lightblue;
+            --main-text-color: darkblue;
+        }
+        
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+        }</code></pre>
         </section>
         <section id="workshop5">
             <h2>Workshop 5: Introduction to JavaScript</h2>
