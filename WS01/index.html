@@ -19,8 +19,8 @@
                 <li><a href="#workshop1">01 HTML Intro</a></li>
                 <li><a href="#workshop2">02 CSS Intro</a></li>
                 <li><a href="#workshop3">03 Page Layout</a></li>
-                <li><a href="#workshop4">04 </a></li>
-                <li><a href="#workshop5">Workshop 5</a></li>
+                <li><a href="#workshop4">04 Advanced CSS</a></li>
+                <li><a href="#workshop5">05 Responsive Design</a></li>
                 <li><a href="#workshop6">Workshop 6</a></li>
                 <li><a href="#workshop7">Workshop 7</a></li>
                 <li><a href="#workshop8">Workshop 8</a></li>
@@ -292,8 +292,160 @@
             color: var(--main-text-color);
         }</code></pre>
         </section>
+
         <section id="workshop5">
-            <h2>Workshop 5: Introduction to JavaScript</h2>
+            <h2>Workshop 5: Responsive Design</h2>
+            <p>In this workshop, you will learn about responsive design techniques to make your web pages look good on
+                all devices.</p>
+
+            <h3>Task 1: Create a Responsive Layout Using Div and Class</h3>
+            <p>Create a responsive layout using `div` elements and classes. Example:</p>
+            <pre><code>&lt;div class="container"&gt;
+            &lt;div class="header"&gt;Header&lt;/div&gt;
+            &lt;div class="content"&gt;Main Content&lt;/div&gt;
+            &lt;div class="sidebar"&gt;Sidebar&lt;/div&gt;
+            &lt;div class="footer"&gt;Footer&lt;/div&gt;
+        &lt;/div&gt;</code></pre>
+            <p>CSS:</p>
+            <pre><code>.container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .header, .footer {
+            background-color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .content {
+            background-color: #ddd;
+            flex: 3;
+            padding: 20px;
+        }
+        
+        .sidebar {
+            background-color: #ccc;
+            flex: 1;
+            padding: 20px;
+        }</code></pre>
+
+            <h3>Task 2: Use the Box Model</h3>
+            <p>Apply the box model to style elements with padding, border, and margin. Example:</p>
+            <pre><code>.box {
+            width: 300px;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 20px;
+            background-color: lightblue;
+        }</code></pre>
+            <p>HTML:</p>
+            <pre><code>&lt;div class="box"&gt;This is a box using the box model.&lt;/div&gt;</code></pre>
+
+            <h3>Task 3: Position Elements</h3>
+            <p>Use CSS positioning to place elements on the page. Example:</p>
+            <pre><code>.relative-box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+        }
+        
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+        }</code></pre>
+            <p>HTML:</p>
+            <pre><code>&lt;div class="relative-box"&gt;
+            Relative Box
+            &lt;div class="absolute-box"&gt;Absolute Box&lt;/div&gt;
+        &lt;/div&gt;</code></pre>
+
+            <h3>Task 4: Media Queries</h3>
+            <p>Use media queries to create a responsive design that adjusts to different screen sizes. Example:</p>
+            <pre><code>@media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        
+            .content, .sidebar {
+                width: 100%;
+            }
+        }</code></pre>
+
+            <h3>Bonus Task: Responsive Navigation Menu</h3>
+            <p>Create a responsive navigation menu that collapses into a hamburger menu on smaller screens. Example:</p>
+            <pre><code>.nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+        
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .hamburger {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .nav a {
+                display: none;
+            }
+        
+            .nav a.icon {
+                display: block;
+            }
+        
+            .nav.responsive {
+                position: relative;
+            }
+        
+            .nav.responsive a {
+                display: block;
+                text-align: left;
+            }
+        
+            .hamburger {
+                display: block;
+            }
+        }</code></pre>
+            <p>HTML:</p>
+            <pre><code>&lt;div class="nav" id="myNav"&gt;
+            &lt;a href="#home"&gt;Home&lt;/a&gt;
+            &lt;a href="#about"&gt;About&lt;/a&gt;
+            &lt;a href="#services"&gt;Services&lt;/a&gt;
+            &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+            &lt;a href="javascript:void(0);" class="icon" onclick="toggleNav()"&gt;&#9776;&lt;/a&gt;
+        &lt;/div&gt;
+        
+        &lt;script&gt;
+        function toggleNav() {
+            var x = document.getElementById("myNav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+        &lt;/script&gt;</code></pre>
         </section>
         <section id="workshop6">
             <h2>Workshop 6: JavaScript DOM Manipulation</h2>
