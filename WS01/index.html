@@ -467,10 +467,24 @@
         </section>
     </main>
 
-    <footer>
+    <!-- <footer>
         <button class="nappi" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Back to Top</button>
         <p>&copy; 2025 Laurea. All rights reserved.</p>
+    </footer> -->
+
+    ...
+    <footer>
+        <button class="nappi" onclick="scrollToTop()">Back to Top</button>
+        <p>&copy; 2025 Laurea. All rights reserved.</p>
     </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            history.pushState(null, null, '#home');
+        }
+    </script>
+    ...
 </body>
 
 </html>
