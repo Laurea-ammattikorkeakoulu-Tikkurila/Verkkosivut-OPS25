@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Laurea Web Development Workshop</title>
-    <link rel="icon" href="./images/Laurea.png" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/styles.css">
-</head>
+    <link rel="icon" href="./images/Laurea.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-
-        <img src="./images/laurea_rgb.png" alt="Laurea Logo" style="height: 100px;">
-        <h1>Laurea Web Development Workshops</h1>
-        <nav>
-            <ul>
-                <li><a href="#workshop1">01 HTML Intro</a></li>
-                <li><a href="#workshop2">02 CSS Intro</a></li>
-                <li><a href="#workshop3">03 Page Layout</a></li>
-                <li><a href="#workshop4">04 Advanced CSS</a></li>
-                <li><a href="#workshop5">05 Responsive Design</a></li>
-                <li><a href="#workshop6">Workshop 6</a></li>
-                <li><a href="#workshop7">Workshop 7</a></li>
-                <li><a href="#workshop8">Workshop 8</a></li>
-                <li><a href="#workshop9">Workshop 9</a></li>
-                <li><a href="#workshop10">Workshop 10</a></li>
-                <li><a href="#workshop11">Workshop 11</a></li>
-            </ul>
-        </nav>
+      <img
+        src="./images/laurea_rgb.png"
+        alt="Laurea Logo"
+        style="height: 100px"
+      />
+      <h1>Laurea Web Development Workshops</h1>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#workshop1">01 HTML Intro</a></li>
+          <li><a href="#workshop2">02 CSS Fundamentals</a></li>
+          <li><a href="#workshop3">03 Advanced CSS</a></li>
+          <li><a href="#workshop4">04 Page layout</a></li>
+          <li><a href="#workshop5">05 Responsive Design</a></li>
+          <li><a href="#workshop6">06 Bootstrap</a></li>
+          <li><a href="#workshop7">07 Bootstrap page layouot 7</a></li>
+          <li><a href="#workshop8">08 Accessibility</a></li>
+          <li><a href="#workshop9">09 Project</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-
-        <section id="workshop1">
-            <h2>Workshop 1: Introduction to HTML</h2>
-            <p>In this workshop, you will learn the basics of HTML, the standard markup language for creating web
-                pages. HTML elements are the building blocks of HTML pages.</p>
-            <h3>Task 1: Create a Basic HTML Page</h3>
-            <p>Create a simple HTML page with a title, heading, and paragraph. Use the following structure: Add a
-                heading for your name, include a paragraph describing yourself</p>
-            <pre><code>&lt;!DOCTYPE html&gt;
+      <section id="workshop1">
+        <h2>Workshop 1: Introduction to HTML</h2>
+        <p>
+          In this workshop, you will learn the basics of HTML, the standard
+          markup language for creating web pages. HTML elements are the building
+          blocks of HTML pages.
+        </p>
+        <h3>Task 1: Create a Basic HTML Page</h3>
+        <p>
+          Create a simple HTML page with a title, heading, and paragraph. Use
+          the following structure: Add a heading for your name, include a
+          paragraph describing yourself
+        </p>
+        <pre><code>&lt;!DOCTYPE html&gt;
     &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;My First HTML Page&lt;/title&gt;
@@ -49,13 +54,18 @@
         &lt;p&gt;This is a paragraph.&lt;/p&gt;
     &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-            <h3>Task 2: Insert an image of yourself with appropriate <code>alt</code> text</h3>
-            <p>Include your own picture in your HTML page using the <code>&lt;img&gt;</code> tag. Example:</p>
-            <pre><code>&lt;img src="path/to/image.jpg" alt="Description of image"&gt;</code></pre>
-            <h3>Task 3: Create a List</h3>
-            <p>Add a list (ordered or unordered) of your hobbies.
-                Example:</p>
-            <pre><code>&lt;h2&gt;Ordered List&lt;/h2&gt;
+        <h3>
+          Task 2: Insert an image of yourself with appropriate
+          <code>alt</code> text
+        </h3>
+        <p>
+          Include your own picture in your HTML page using the
+          <code>&lt;img&gt;</code> tag. Example:
+        </p>
+        <pre><code>&lt;img src="path/to/image.jpg" alt="Description of image"&gt;</code></pre>
+        <h3>Task 3: Create a List</h3>
+        <p>Add a list (ordered or unordered) of your hobbies. Example:</p>
+        <pre><code>&lt;h2&gt;Ordered List&lt;/h2&gt;
     &lt;ol&gt;
         &lt;li&gt;First item&lt;/li&gt;
         &lt;li&gt;Second item&lt;/li&gt;
@@ -68,13 +78,18 @@
         &lt;li&gt;Second item&lt;/li&gt;
         &lt;li&gt;Third item&lt;/li&gt;
     &lt;/ul&gt;</code></pre>
-            <h3>Task 4: Add a Link</h3>
-            <p>Add a hyperlink to your favorite Web page <code>&lt;a&gt;</code> tag. Example:</p>
-            <pre><code>&lt;a href="https://www.laurea.fi"&gt;Visit Laurea&lt;/a&gt;</code></pre>
-            <h3>Bonus Task: Create a Table</h3>
-            <p>Create a table with at least 3 rows and 2 columns. Include a header row and some sample data.
-                Example:</p>
-            <pre><code>&lt;table&gt;
+        <h3>Task 4: Add a Link</h3>
+        <p>
+          Add a hyperlink to your favorite Web page <code>&lt;a&gt;</code> tag.
+          Example:
+        </p>
+        <pre><code>&lt;a href="https://www.laurea.fi"&gt;Visit Laurea&lt;/a&gt;</code></pre>
+        <h3>Bonus Task: Create a Table</h3>
+        <p>
+          Create a table with at least 3 rows and 2 columns. Include a header
+          row and some sample data. Example:
+        </p>
+        <pre><code>&lt;table&gt;
         &lt;tr&gt;
             &lt;th&gt;Header 1&lt;/th&gt;
             &lt;th&gt;Header 2&lt;/th&gt;
@@ -88,46 +103,60 @@
             &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
         &lt;/tr&gt;
     &lt;/table&gt;</code></pre>
+      </section>
 
+      <!-- Add more sections for each workshop -->
 
-        </section>
-
-
-        <!-- Add more sections for each workshop -->
-
-        <section id="workshop2">
-            <h2>Workshop 2: Introduction to CSS</h2>
-            <p>In this workshop, you will learn the basics of CSS, the language used to style HTML elements.</p>
-            <h3>Task 1: Change Text Color</h3>
-            <p>Change the color of the text in your HTML page using the <code>color</code> property. Example:</p>
-            <pre><code>p {
+      <section id="workshop2">
+        <h2>Workshop 2: CSS Fundamentals</h2>
+        <p>
+          In this workshop, you will learn the basics of CSS, the language used
+          to style HTML elements.
+        </p>
+        <h3>Task 1: Change Text Color</h3>
+        <p>
+          Change the color of the text in your HTML page using the
+          <code>color</code> property. Example:
+        </p>
+        <pre><code>p {
     color: blue;
 }</code></pre>
-            <h3>Task 2: Add Background Color</h3>
-            <p>Add a background color to your HTML page using the <code>background-color</code> property. Example:</p>
-            <pre><code>body {
+        <h3>Task 2: Add Background Color</h3>
+        <p>
+          Add a background color to your HTML page using the
+          <code>background-color</code> property. Example:
+        </p>
+        <pre><code>body {
     background-color: lightgray;
 }</code></pre>
-            <h3>Task 3: Change Font Size</h3>
-            <p>Change the font size of the text in your HTML page using the <code>font-size</code> property. Example:
-            </p>
-            <pre><code>h1 {
+        <h3>Task 3: Change Font Size</h3>
+        <p>
+          Change the font size of the text in your HTML page using the
+          <code>font-size</code> property. Example:
+        </p>
+        <pre><code>h1 {
     font-size: 2em;
 }</code></pre>
-            <h3>Task 4: Add Padding and Margin</h3>
-            <p>Add padding and margin to elements in your HTML page using the <code>padding</code> and
-                <code>margin</code> properties. Example:
-            </p>
-            <pre><code>div {
+        <h3>Task 4: Add Padding and Margin</h3>
+        <p>
+          Add padding and margin to elements in your HTML page using the
+          <code>padding</code> and <code>margin</code> properties. Example:
+        </p>
+        <pre><code>div {
     padding: 20px;
     margin: 10px;
 }</code></pre>
-            <h3>Bonus Task: Create a CSS Grid Layout</h3>
-            <p>Create a simple grid layout using CSS Grid. Learn more about the CSS grid layout in <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout" target="_blank">MDN Web
-                    Docs</a>. Example:
-            </p>
-            <pre><code>.grid-container {
+        <h3>Bonus Task: Create a CSS Grid Layout</h3>
+        <p>
+          Create a simple grid layout using CSS Grid. Learn more about the CSS
+          grid layout in
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout"
+            target="_blank"
+            >MDN Web Docs</a
+          >. Example:
+        </p>
+        <pre><code>.grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
@@ -138,93 +167,19 @@
     padding: 20px;
     text-align: center;
 }</code></pre>
-
-
-        </section>
-
-        <section id="workshop3">
-            <h2>Workshop 3: Web page layout</h2>
-            <p>In this workshop, you will learn about different techniques for laying out a web page using HTML and CSS.
-            </p>
-            <h3>Task 1: Create a Header</h3>
-            <p>Create a header for your web page that includes a logo and a navigation menu. Use the following
-                structure:</p>
-            <pre><code>&lt;header&gt;
-            &lt;img src="path/to/logo.png" alt="Logo" style="height: 50px;"&gt;
-            &lt;nav&gt;
-                &lt;ul&gt;
-                    &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/nav&gt;
-        &lt;/header&gt;</code></pre>
-            <h3>Task 2: Create a Two-Column Layout</h3>
-            <p>Create a two-column layout for your web page using CSS. One column should be for the main content and the
-                other for a sidebar. Example:</p>
-            <pre><code>.container {
-            display: flex;
-        }
-        
-        .main-content {
-            flex: 3;
-            padding: 20px;
-        }
-        
-        .sidebar {
-            flex: 1;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }</code></pre>
-            <h3>Task 3: Create a Footer</h3>
-            <p>Create a footer for your web page that includes some basic information and links. Use the following
-                structure:</p>
-            <pre><code>&lt;footer&gt;
-            &lt;p&gt;&copy; 2025 Your Name. All rights reserved.&lt;/p&gt;
-            &lt;nav&gt;
-                &lt;ul&gt;
-                    &lt;li&gt;&lt;a href="#privacy"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#terms"&gt;Terms of Service&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/nav&gt;
-        &lt;/footer&gt;</code></pre>
-            <h3>Task 4: Add a Hero Section</h3>
-            <p>Add a hero section to your web page that includes a large background image and some text. Example:</p>
-            <pre><code>.hero {
-            background-image: url('path/to/image.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        
-        .hero h1 {
-            font-size: 3em;
-        }
-        
-        .hero p {
-            font-size: 1.5em;
-        }</code></pre>
-            <h3>Bonus Task: Create a Responsive Layout</h3>
-            <p>Create a responsive layout for your web page that adjusts to different screen sizes using media queries.
-                Example:</p>
-            <pre><code>@media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-        
-            .main-content, .sidebar {
-                flex: 1;
-            }
-        }</code></pre>
-        </section>
-        <section id="workshop4">
-            <h2>Workshop 4: Advanced CSS</h2>
-            <p>In this workshop, you will learn advanced CSS techniques to enhance your web pages.</p>
-            <h3>Task 1: CSS Transitions</h3>
-            <p>Add a transition effect to an element when it changes state, such as on hover. Example:</p>
-            <pre><code>button {
+      </section>
+      <section id="workshop3">
+        <h2>Workshop 3: Advanced CSS</h2>
+        <p>
+          In this workshop, you will learn advanced CSS techniques to enhance
+          your web pages.
+        </p>
+        <h3>Task 1: CSS Transitions</h3>
+        <p>
+          Add a transition effect to an element when it changes state, such as
+          on hover. Example:
+        </p>
+        <pre><code>button {
             background-color: #4CAF50;
             color: white;
             padding: 15px 32px;
@@ -240,9 +195,9 @@
         button:hover {
             background-color: #45a049;
         }</code></pre>
-            <h3>Task 2: CSS Animations</h3>
-            <p>Create a simple animation using CSS. Example:</p>
-            <pre><code>@keyframes example {
+        <h3>Task 2: CSS Animations</h3>
+        <p>Create a simple animation using CSS. Example:</p>
+        <pre><code>@keyframes example {
             from {background-color: red;}
             to {background-color: yellow;}
         }
@@ -254,9 +209,9 @@
             animation-name: example;
             animation-duration: 4s;
         }</code></pre>
-            <h3>Task 3: CSS Flexbox</h3>
-            <p>Use Flexbox to create a flexible layout. Example:</p>
-            <pre><code>.flex-container {
+        <h3>Task 3: CSS Flexbox</h3>
+        <p>Use Flexbox to create a flexible layout. Example:</p>
+        <pre><code>.flex-container {
             display: flex;
             justify-content: space-between;
         }
@@ -267,9 +222,9 @@
             margin: 5px;
             text-align: center;
         }</code></pre>
-            <h3>Task 4: CSS Grid</h3>
-            <p>Use CSS Grid to create a grid layout. Example:</p>
-            <pre><code>.grid-container {
+        <h3>Task 4: CSS Grid</h3>
+        <p>Use CSS Grid to create a grid layout. Example:</p>
+        <pre><code>.grid-container {
             display: grid;
             grid-template-columns: auto auto auto;
             gap: 10px;
@@ -280,9 +235,12 @@
             padding: 20px;
             text-align: center;
         }</code></pre>
-            <h3>Bonus Task: CSS Variables</h3>
-            <p>Use CSS variables to manage colors and other styles more efficiently. Example:</p>
-            <pre><code>:root {
+        <h3>Bonus Task: CSS Variables</h3>
+        <p>
+          Use CSS variables to manage colors and other styles more efficiently.
+          Example:
+        </p>
+        <pre><code>:root {
             --main-bg-color: lightblue;
             --main-text-color: darkblue;
         }
@@ -291,23 +249,117 @@
             background-color: var(--main-bg-color);
             color: var(--main-text-color);
         }</code></pre>
-        </section>
+      </section>
+      <section id="workshop4">
+        <h2>Workshop 4: Page Layout</h2>
+        <p>
+          In this workshop, you will learn about different techniques for laying
+          out a web page using HTML and CSS.
+        </p>
+        <h3>Task 1: Create a Header</h3>
+        <p>
+          Create a header for your web page that includes a logo and a
+          navigation menu. Use the following structure:
+        </p>
+        <pre><code>&lt;header&gt;
+            &lt;img src="path/to/logo.png" alt="Logo" style="height: 50px;"&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;</code></pre>
+        <h3>Task 2: Create a Two-Column Layout</h3>
+        <p>
+          Create a two-column layout for your web page using CSS. One column
+          should be for the main content and the other for a sidebar. Example:
+        </p>
+        <pre><code>.container {
+            display: flex;
+        }
+        
+        .main-content {
+            flex: 3;
+            padding: 20px;
+        }
+        
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }</code></pre>
+        <h3>Task 3: Create a Footer</h3>
+        <p>
+          Create a footer for your web page that includes some basic information
+          and links. Use the following structure:
+        </p>
+        <pre><code>&lt;footer&gt;
+            &lt;p&gt;&copy; 2025 Your Name. All rights reserved.&lt;/p&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#privacy"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#terms"&gt;Terms of Service&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/footer&gt;</code></pre>
+        <h3>Task 4: Add a Hero Section</h3>
+        <p>
+          Add a hero section to your web page that includes a large background
+          image and some text. Example:
+        </p>
+        <pre><code>.hero {
+            background-image: url('path/to/image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+        }
+        
+        .hero p {
+            font-size: 1.5em;
+        }</code></pre>
+        <h3>Bonus Task: Create a Responsive Layout</h3>
+        <p>
+          Create a responsive layout for your web page that adjusts to different
+          screen sizes using media queries. Example:
+        </p>
+        <pre><code>@media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        
+            .main-content, .sidebar {
+                flex: 1;
+            }
+        }</code></pre>
+      </section>
 
-        <section id="workshop5">
-            <h2>Workshop 5: Responsive Design</h2>
-            <p>In this workshop, you will learn about responsive design techniques to make your web pages look good on
-                all devices.</p>
+      <section id="workshop5">
+        <h2>Workshop 5: Responsive Design</h2>
+        <p>
+          In this workshop, you will learn about responsive design techniques to
+          make your web pages look good on all devices.
+        </p>
 
-            <h3>Task 1: Create a Responsive Layout Using Div and Class</h3>
-            <p>Create a responsive layout using `div` elements and classes. Example:</p>
-            <pre><code>&lt;div class="container"&gt;
+        <h3>Task 1: Create a Responsive Layout Using Div and Class</h3>
+        <p>
+          Create a responsive layout using `div` elements and classes. Example:
+        </p>
+        <pre><code>&lt;div class="container"&gt;
             &lt;div class="header"&gt;Header&lt;/div&gt;
             &lt;div class="content"&gt;Main Content&lt;/div&gt;
             &lt;div class="sidebar"&gt;Sidebar&lt;/div&gt;
             &lt;div class="footer"&gt;Footer&lt;/div&gt;
         &lt;/div&gt;</code></pre>
-            <p>CSS:</p>
-            <pre><code>.container {
+        <p>CSS:</p>
+        <pre><code>.container {
             display: flex;
             flex-wrap: wrap;
         }
@@ -331,21 +383,24 @@
             padding: 20px;
         }</code></pre>
 
-            <h3>Task 2: Use the Box Model</h3>
-            <p>Apply the box model to style elements with padding, border, and margin. Example:</p>
-            <pre><code>.box {
+        <h3>Task 2: Use the Box Model</h3>
+        <p>
+          Apply the box model to style elements with padding, border, and
+          margin. Example:
+        </p>
+        <pre><code>.box {
             width: 300px;
             padding: 20px;
             border: 5px solid black;
             margin: 20px;
             background-color: lightblue;
         }</code></pre>
-            <p>HTML:</p>
-            <pre><code>&lt;div class="box"&gt;This is a box using the box model.&lt;/div&gt;</code></pre>
+        <p>HTML:</p>
+        <pre><code>&lt;div class="box"&gt;This is a box using the box model.&lt;/div&gt;</code></pre>
 
-            <h3>Task 3: Position Elements</h3>
-            <p>Use CSS positioning to place elements on the page. Example:</p>
-            <pre><code>.relative-box {
+        <h3>Task 3: Position Elements</h3>
+        <p>Use CSS positioning to place elements on the page. Example:</p>
+        <pre><code>.relative-box {
             position: relative;
             width: 200px;
             height: 200px;
@@ -360,15 +415,18 @@
             height: 100px;
             background-color: lightcoral;
         }</code></pre>
-            <p>HTML:</p>
-            <pre><code>&lt;div class="relative-box"&gt;
+        <p>HTML:</p>
+        <pre><code>&lt;div class="relative-box"&gt;
             Relative Box
             &lt;div class="absolute-box"&gt;Absolute Box&lt;/div&gt;
         &lt;/div&gt;</code></pre>
 
-            <h3>Task 4: Media Queries</h3>
-            <p>Use media queries to create a responsive design that adjusts to different screen sizes. Example:</p>
-            <pre><code>@media (max-width: 768px) {
+        <h3>Task 4: Media Queries</h3>
+        <p>
+          Use media queries to create a responsive design that adjusts to
+          different screen sizes. Example:
+        </p>
+        <pre><code>@media (max-width: 768px) {
             .container {
                 flex-direction: column;
             }
@@ -378,9 +436,12 @@
             }
         }</code></pre>
 
-            <h3>Bonus Task: Responsive Navigation Menu</h3>
-            <p>Create a responsive navigation menu that collapses into a hamburger menu on smaller screens. Example:</p>
-            <pre><code>.nav {
+        <h3>Bonus Task: Responsive Navigation Menu</h3>
+        <p>
+          Create a responsive navigation menu that collapses into a hamburger
+          menu on smaller screens. Example:
+        </p>
+        <pre><code>.nav {
             display: flex;
             justify-content: space-between;
             background-color: #333;
@@ -427,8 +488,8 @@
                 display: block;
             }
         }</code></pre>
-            <p>HTML:</p>
-            <pre><code>&lt;div class="nav" id="myNav"&gt;
+        <p>HTML:</p>
+        <pre><code>&lt;div class="nav" id="myNav"&gt;
             &lt;a href="#home"&gt;Home&lt;/a&gt;
             &lt;a href="#about"&gt;About&lt;/a&gt;
             &lt;a href="#services"&gt;Services&lt;/a&gt;
@@ -446,31 +507,31 @@
             }
         }
         &lt;/script&gt;</code></pre>
-        </section>
-        <section id="workshop6">
-            <h2>Workshop 6: JavaScript DOM Manipulation</h2>
-        </section>
-        <section id="workshop7">
-            <h2>Workshop 7: Responsive Web Design</h2>
-        </section>
-        <section id="workshop8">
-            <h2>Workshop 8: CSS Flexbox</h2>
-        </section>
-        <section id="workshop9">
-            <h2>Workshop 9: CSS Grid</h2>
-        </section>
-        <section id="workshop10">
-            <h2>Workshop 10: Web Accessibility</h2>
-        </section>
-        <section id="workshop11">
-            <h2>Workshop 11: Final Project</h2>
-        </section>
+      </section>
+      <section id="workshop6">
+        <h2>Workshop 6: Bootstrap</h2>
+      </section>
+      <section id="workshop7">
+        <h2>Workshop 7: Bootstrap page layout</h2>
+      </section>
+      <section id="workshop8">
+        <h2>Workshop 8: Accessibility</h2>
+      </section>
+      <section id="workshop9">
+        <h2>Workshop 9: Project</h2>
+      </section>
     </main>
 
     <footer>
-        <button class="nappi" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Back to Top</button>
-        <p>&copy; 2025 Laurea. All rights reserved.</p>
+      <button class="nappi" onclick="scrollToTop()">Back to Top</button>
+      <p>&copy; 2025 Jari Kovis @ Laurea. All rights reserved.</p>
     </footer>
-</body>
 
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.location.hash = "#";
+      }
+    </script>
+  </body>
 </html>
