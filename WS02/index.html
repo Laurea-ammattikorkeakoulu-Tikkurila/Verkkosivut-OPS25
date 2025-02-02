@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Laurea Web Development Workshop</title>
+    <link rel="icon" href="./images/Laurea.png" type="image/x-icon" >
+    <link rel="stylesheet" href="./styles/styles.css" >
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="./images/laurea_rgb.png"
+        alt="Laurea Logo"
+        style="height: 100px"
+      >
+      <h1>Laurea Web Development Workshops</h1>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="../WS01/index.html">01 HTML Intro</a></li>
+          <li><a href="../WS02/index.html" class="active">02 CSS Fundamentals</a></li>
+          <li><a href="../WS03/index.html">03 Advanced CSS</a></li>
+          <li><a href="../WS04/index.html">04 Page layout</a></li>
+          <li><a href="../WS05/index.html">05 Responsive Design</a></li>
+          <li><a href="../WS06/index.html">06 Bootstrap</a></li>
+          <li><a href="../WS07/index.html">07 Bootstrap page layouot 7</a></li>
+          <li><a href="../WS08/index.html">08 Accessibility</a></li>
+          <li><a href="../WS09/index.html">09 Project</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="workshop2">
+        <h2>Workshop 2: CSS Fundamentals</h2>
+        <p>
+          In this workshop, you will learn the basics of CSS, the language used
+          to style HTML elements.
+        </p>
+        <h3>Task 1: Change Text Color</h3>
+        <p>
+          Change the color of the text in your HTML page using the
+          <code>color</code> property. Example:
+        </p>
+        <pre><code>p {
+    color: blue;
+}</code></pre>
+        <h3>Task 2: Add Background Color</h3>
+        <p>
+          Add a background color to your HTML page using the
+          <code>background-color</code> property. Example:
+        </p>
+        <pre><code>body {
+    background-color: lightgray;
+}</code></pre>
+        <h3>Task 3: Change Font Size</h3>
+        <p>
+          Change the font size of the text in your HTML page using the
+          <code>font-size</code> property. Example:
+        </p>
+        <pre><code>h1 {
+    font-size: 2em;
+}</code></pre>
+        <h3>Task 4: Add Padding and Margin</h3>
+        <p>
+          Add padding and margin to elements in your HTML page using the
+          <code>padding</code> and <code>margin</code> properties. Example:
+        </p>
+        <pre><code>div {
+    padding: 20px;
+    margin: 10px;
+}</code></pre>
+<h3>Task 5: Validate Your HTML Code</h3>
+<p>
+  Validate your CSS code using the W3C Web Validator extension in Visual Studio Code. Follow these steps:
+</p>
+<ol>
+  <li>Install the W3C Web Validator extension in Visual Studio Code.</li>
+  <li>Open your CSS file in Visual Studio Code.</li>
+  <li>Use the W3C Web Validator extension to validate your code.</li>
+  <li>Fix any errors or warnings that are reported.</li>
+</ol>
+        <h3>Bonus Task: Create a CSS Grid Layout</h3>
+        <p>
+          Create a simple grid layout using CSS Grid. Learn more about the CSS
+          grid layout in
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout"
+            target="_blank"
+            >MDN Web Docs</a
+          >. Example:
+        </p>
+        <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}</code></pre>
+      </section>
+
+      <!-- Add more sections for each workshop -->
+
+    </main>
+
+    <footer>
+      <button class="nappi" onclick="scrollToTop()">Back to Top</button>
+      <p>&copy; 2025 Jari Kovis @ Laurea. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.location.hash = "#";
+      }
+    </script>
+  </body>
+</html>

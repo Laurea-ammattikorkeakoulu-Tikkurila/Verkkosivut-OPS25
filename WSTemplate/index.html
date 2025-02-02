@@ -1,48 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Laurea Web Development Workshop</title>
+    <link rel="icon" href="./images/Laurea.png" type="image/x-icon" >
+    <link rel="stylesheet" href="./styles/styles.css" >
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laurea University Web Development Workshop</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="icon" href="./images/image.png" type="image/x-icon">
-</head>
-
-<body>
+  <body>
     <header>
-
-        <h1>Laurea Web Development Workshops</h1>
-        <nav>
-            <ul>
-                <li><a href="#workshop1">Workshop 1</a></li>
-                <li><a href="#workshop2">Workshop 2</a></li>
-                <li><a href="#workshop3">Workshop 3</a></li>
-                <li><a href="#workshop4">Workshop 4</a></li>
-                <li><a href="#workshop5">Workshop 5</a></li>
-                <li><a href="#workshop6">Workshop 6</a></li>
-                <li><a href="#workshop7">Workshop 7</a></li>
-                <li><a href="#workshop8">Workshop 8</a></li>
-                <li><a href="#workshop9">Workshop 9</a></li>
-                <li><a href="#workshop10">Workshop 10</a></li>
-                <li><a href="#workshop11">Workshop 11</a></li>
-            </ul>
-        </nav>
+      <img
+        src="./images/laurea_rgb.png"
+        alt="Laurea Logo"
+        style="height: 100px"
+      >
+      <h1>Laurea Web Development Workshops</h1>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="../WS01/index.html">01 HTML Intro</a></li>
+          <li><a href="../WS02/index.html">02 CSS Fundamentals</a></li>
+          <li><a href="../WS03/index.html">03 Advanced CSS</a></li>
+          <li><a href="../WS04/index.html">04 Page layout</a></li>
+          <li><a href="../WS05/index.html">05 Responsive Design</a></li>
+          <li><a href="../WS06/index.html">06 Bootstrap</a></li>
+          <li><a href="../WS07/index.html">07 Bootstrap page layouot 7</a></li>
+          <li><a href="../WS08/index.html">08 Accessibility</a></li>
+          <li><a href="../WS09/index.html">09 Project</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="workshop1">
-            <h2>Workshop 1: Introduction to HTML</h2>
-            <p>Content for Workshop 1 goes here...</p>
-        </section>
-        <section id="workshop2">
-            <h2>Workshop 2: Introduction to CSS</h2>
-            <p>Content for Workshop 2 goes here...</p>
-        </section>
-        <!-- Add more sections for each workshop -->
-    </main>
-    <footer>
-        <p>&copy; 2023 Laure University. All rights reserved.</p>
-    </footer>
-</body>
+      <section id="workshop1">
+        <h2>Workshop 1: Introduction to HTML</h2>
+        <p>
+          In this workshop, you will learn the basics of HTML, the standard
+          markup language for creating web pages. HTML elements are the building
+          blocks of HTML pages.
+        </p>
+        <h3>Task 1: Create a Basic HTML Page</h3>
+        <p>
+          Create a simple HTML page with a title, heading, and paragraph. Use
+          the following structure: Add a heading for your name, include a
+          paragraph describing yourself
+        </p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My First HTML Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to my Page&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+        <h3>
+          Task 2: Insert an image of yourself with appropriate
+          <code>alt</code> text
+        </h3>
+        <p>
+          Include your own picture in your HTML page using the
+          <code>&lt;img&gt;</code> tag. Example:
+        </p>
+        <pre><code>&lt;img src="path/to/image.jpg" alt="Description of image"&gt;</code></pre>
+        <h3>Task 3: Create a List</h3>
+        <p>Add a list (ordered or unordered) of your hobbies. Example:</p>
+        <pre><code>&lt;h2&gt;Ordered List&lt;/h2&gt;
+    &lt;ol&gt;
+        &lt;li&gt;First item&lt;/li&gt;
+        &lt;li&gt;Second item&lt;/li&gt;
+        &lt;li&gt;Third item&lt;/li&gt;
+    &lt;/ol&gt;
+    
+    &lt;h2&gt;Unordered List&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;First item&lt;/li&gt;
+        &lt;li&gt;Second item&lt;/li&gt;
+        &lt;li&gt;Third item&lt;/li&gt;
+    &lt;/ul&gt;</code></pre>
+        <h3>Task 4: Add a Link</h3>
+        <p>
+          Add a hyperlink to your favorite Web page <code>&lt;a&gt;</code> tag.
+          Example:
+        </p>
+        <pre><code>&lt;a href="https://www.laurea.fi"&gt;Visit Laurea&lt;/a&gt;</code></pre>
+        <h3>Task 5: Validate Your HTML Code</h3>
+  <p>
+    Validate your HTML code using the W3C Web Validator extension in Visual Studio Code. Follow these steps:
+  </p>
+  <ol>
+    <li>Install the W3C Web Validator extension in Visual Studio Code.</li>
+    <li>Open your HTML file in Visual Studio Code.</li>
+    <li>Use the W3C Validator extension to validate your code.</li>
+    <li>Fix any errors or warnings that are reported.</li>
+  </ol>
+        <h3>Bonus Task: Create a Table</h3>
+        <p>
+          Create a table with at least 3 rows and 2 columns. Include a header
+          row and some sample data e.g. about your ongoing courses. Example:
+        </p>
+        <pre><code>&lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Header 1&lt;/th&gt;
+            &lt;th&gt;Header 2&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+            &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+            &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;</code></pre>
+      </section>
 
+      <!-- Add more sections for each workshop -->
+
+    </main>
+
+    <footer>
+      <button class="nappi" onclick="scrollToTop()">Back to Top</button>
+      <p>&copy; 2025 Jari Kovis @ Laurea. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.location.hash = "#";
+      }
+    </script>
+  </body>
 </html>

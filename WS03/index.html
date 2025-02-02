@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Laurea Web Development Workshop</title>
+    <link rel="icon" href="./images/Laurea.png" type="image/x-icon" >
+    <link rel="stylesheet" href="./styles/styles.css" >
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="./images/laurea_rgb.png"
+        alt="Laurea Logo"
+        style="height: 100px"
+      >
+      <h1>Laurea Web Development Workshops</h1>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="../WS01/index.html">01 HTML Intro</a></li>
+          <li><a href="../WS02/index.html">02 CSS Fundamentals</a></li>
+          <li><a href="../WS03/index.html" class="active">03 Advanced CSS</a></li>
+          <li><a href="../WS04/index.html">04 Page layout</a></li>
+          <li><a href="../WS05/index.html">05 Responsive Design</a></li>
+          <li><a href="../WS06/index.html">06 Bootstrap</a></li>
+          <li><a href="../WS07/index.html">07 Bootstrap page layouot 7</a></li>
+          <li><a href="../WS08/index.html">08 Accessibility</a></li>
+          <li><a href="../WS09/index.html">09 Project</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      
+      <section id="workshop3">
+        <h2>Workshop 3: Advanced CSS</h2>
+        <p>
+          In this workshop, you will learn advanced CSS techniques including Flexbox, Grid Layout, and Media Queries.
+        </p>
+      
+        <h3>Task 1: Flexbox Layout</h3>
+        <p>
+          Create a Flexbox layout with three columns. Each column should have a different background color. Use the following structure:
+        </p>
+        <pre><code>&lt;div class="flex-container"&gt;
+        &lt;div class="flex-item"&gt;Column 1&lt;/div&gt;
+        &lt;div class="flex-item"&gt;Column 2&lt;/div&gt;
+        &lt;div class="flex-item"&gt;Column 3&lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+        <p>CSS:</p>
+        <pre><code>.flex-container {
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      .flex-item {
+        background-color: lightblue;
+        padding: 20px;
+        margin: 10px;
+        flex: 1;
+      }</code></pre>
+      
+        <h3>Task 2: Grid Layout</h3>
+        <p>
+          Create a Grid Layout with four columns and two rows. Each cell should have a different background color. Use the following structure:
+        </p>
+        <pre><code>&lt;div class="grid-container"&gt;
+        &lt;div class="grid-item"&gt;1&lt;/div&gt;
+        &lt;div class="grid-item"&gt;2&lt;/div&gt;
+        &lt;div class="grid-item"&gt;3&lt;/div&gt;
+        &lt;div class="grid-item"&gt;4&lt;/div&gt;
+        &lt;div class="grid-item"&gt;5&lt;/div&gt;
+        &lt;div class="grid-item"&gt;6&lt;/div&gt;
+        &lt;div class="grid-item"&gt;7&lt;/div&gt;
+        &lt;div class="grid-item"&gt;8&lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+        <p>CSS:</p>
+        <pre><code>.grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+      }
+      
+      .grid-item {
+        background-color: lightgreen;
+        padding: 20px;
+        text-align: center;
+      }</code></pre>
+      
+        <h3>Task 3: Media Queries</h3>
+        <p>
+          Create a responsive layout that changes the background color of a div based on the screen width. Use the following structure:
+        </p>
+        <pre><code>&lt;div class="responsive-div"&gt;Resize the window to see the effect&lt;/div&gt;</code></pre>
+        <p>CSS:</p>
+        <pre><code>.responsive-div {
+        padding: 20px;
+        text-align: center;
+      }
+      
+      @media (max-width: 600px) {
+        .responsive-div {
+          background-color: lightcoral;
+        }
+      }
+      
+      @media (min-width: 601px) {
+        .responsive-div {
+          background-color: lightseagreen;
+        }
+      }</code></pre>
+      
+        <h3>Task 4: Flexbox Alignment</h3>
+        <p>
+          Create a Flexbox layout with items aligned to the center both vertically and horizontally. Use the following structure:
+        </p>
+        <pre><code>&lt;div class="flex-center-container"&gt;
+        &lt;div class="flex-center-item"&gt;Centered Item&lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+        <p>CSS:</p>
+        <pre><code>.flex-center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        background-color: lightgray;
+      }
+      
+      .flex-center-item {
+        background-color: lightblue;
+        padding: 20px;
+      }</code></pre>
+      
+        <h3>Task 5: Grid Layout with Media Queries</h3>
+        <p>
+          Create a Grid Layout that changes the number of columns based on the screen width. Use the following structure:
+        </p>
+        <pre><code>&lt;div class="responsive-grid-container"&gt;
+        &lt;div class="responsive-grid-item"&gt;1&lt;/div&gt;
+        &lt;div class="responsive-grid-item"&gt;2&lt;/div&gt;
+        &lt;div class="responsive-grid-item"&gt;3&lt;/div&gt;
+        &lt;div class="responsive-grid-item"&gt;4&lt;/div&gt;
+        &lt;div class="responsive-grid-item"&gt;5&lt;/div&gt;
+        &lt;div class="responsive-grid-item"&gt;6&lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+        <p>CSS:</p>
+        <pre><code>.responsive-grid-container {
+        display: grid;
+        grid-gap: 10px;
+      }
+      
+      @media (max-width: 600px) {
+        .responsive-grid-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      
+      @media (min-width: 601px) {
+        .responsive-grid-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      
+      .responsive-grid-item {
+        background-color: lightpink;
+        padding: 20px;
+        text-align: center;
+      }</code></pre>
+      </section>
+      <!-- Add more sections for each workshop -->
+
+    </main>
+
+    <footer>
+      <button class="nappi" onclick="scrollToTop()">Back to Top</button>
+      <p>&copy; 2025 Jari Kovis @ Laurea. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.location.hash = "#";
+      }
+    </script>
+  </body>
+</html>
