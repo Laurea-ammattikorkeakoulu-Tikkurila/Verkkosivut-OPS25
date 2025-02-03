@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Laurea Web Development Workshop</title>
     <link rel="icon" href="./images/Laurea.png" type="image/x-icon" >
-    <link rel="stylesheet" href="./styles/styles.css" >
+    <link rel="stylesheet" href="../WSTemplate/styles/styles.css" >
   </head>
 
   <body>
@@ -17,6 +17,7 @@
       >
       <h1>Laurea Web Development Workshops</h1>
       <nav class="top-nav">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <ul>
           <li><a href="../WS01/index.html">01 HTML Intro</a></li>
           <li><a href="../WS02/index.html">02 CSS Fundamentals</a></li>
@@ -176,11 +177,6 @@
       <p>&copy; 2025 Jari Kovis @ Laurea. All rights reserved.</p>
     </footer>
 
-    <script>
-      function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        window.location.hash = "#";
-      }
-    </script>
+    <script src="../WSTemplate/scripts/scripts.js"></script>
   </body>
 </html>

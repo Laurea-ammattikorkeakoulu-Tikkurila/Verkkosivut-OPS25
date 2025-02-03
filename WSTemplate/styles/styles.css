@@ -36,6 +36,7 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
 }
+
 .top-nav {
   background-color: #333;
   overflow: hidden;
@@ -70,6 +71,36 @@ nav ul li a:hover {
 .top-nav a.active {
   background-color: #777779; /* Highlight color */
   color: white;
+}
+/* Styles for the hamburger menu button */
+.menu-toggle {
+  display: none;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 1270px) {
+  .top-nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  .top-nav ul.show {
+    display: flex;
+  }
+
+  .top-nav li {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
 
 main {
