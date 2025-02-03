@@ -36,136 +36,105 @@
       <section id="workshop3">
         <h2>Workshop 3: Advanced CSS</h2>
         <p>
-          In this workshop, you will learn advanced CSS techniques including Flexbox, Grid Layout, and Media Queries.
+          In this workshop, you will learn advanced CSS techniques including CSS transitions, CSS animations, CSS pseudo-classes, and CSS filters.
         </p>
       
-        <h3>Task 1: Flexbox Layout</h3>
+        <h3>Task 1: CSS Transitions</h3>
         <p>
-          Create a Flexbox layout with three columns. Each column should have a different background color. Use the following structure:
+          Create a button that changes its background color smoothly when hovered over. Use the following structure:
         </p>
-        <pre><code>&lt;div class="flex-container"&gt;
-        &lt;div class="flex-item"&gt;Column 1&lt;/div&gt;
-        &lt;div class="flex-item"&gt;Column 2&lt;/div&gt;
-        &lt;div class="flex-item"&gt;Column 3&lt;/div&gt;
-      &lt;/div&gt;</code></pre>
+        <pre><code>&lt;button class="transition-button"&gt;Hover me&lt;/button&gt;</code></pre>
         <p>CSS:</p>
-        <pre><code>.flex-container {
-        display: flex;
-        justify-content: space-around;
-      }
-      
-      .flex-item {
+        <pre><code>.transition-button {
         background-color: lightblue;
-        padding: 20px;
-        margin: 10px;
-        flex: 1;
-      }</code></pre>
-      
-        <h3>Task 2: Grid Layout</h3>
-        <p>
-          Create a Grid Layout with four columns and two rows. Each cell should have a different background color. Use the following structure:
-        </p>
-        <pre><code>&lt;div class="grid-container"&gt;
-        &lt;div class="grid-item"&gt;1&lt;/div&gt;
-        &lt;div class="grid-item"&gt;2&lt;/div&gt;
-        &lt;div class="grid-item"&gt;3&lt;/div&gt;
-        &lt;div class="grid-item"&gt;4&lt;/div&gt;
-        &lt;div class="grid-item"&gt;5&lt;/div&gt;
-        &lt;div class="grid-item"&gt;6&lt;/div&gt;
-        &lt;div class="grid-item"&gt;7&lt;/div&gt;
-        &lt;div class="grid-item"&gt;8&lt;/div&gt;
-      &lt;/div&gt;</code></pre>
-        <p>CSS:</p>
-        <pre><code>.grid-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 10px;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
       }
       
-      .grid-item {
+      .transition-button:hover {
+        background-color: lightcoral;
+      }</code></pre>
+      
+        <h3>Task 2: CSS Animations</h3>
+        <p>
+          Create a div that moves from left to right continuously. Use the following structure:
+        </p>
+        <pre><code>&lt;div class="animation-box"&gt;&lt;/div&gt;</code></pre>
+        <p>CSS:</p>
+        <pre><code>.animation-box {
+        width: 50px;
+        height: 50px;
         background-color: lightgreen;
-        padding: 20px;
-        text-align: center;
-      }</code></pre>
-      
-        <h3>Task 3: Media Queries</h3>
-        <p>
-          Create a responsive layout that changes the background color of a div based on the screen width. Use the following structure:
-        </p>
-        <pre><code>&lt;div class="responsive-div"&gt;Resize the window to see the effect&lt;/div&gt;</code></pre>
-        <p>CSS:</p>
-        <pre><code>.responsive-div {
-        padding: 20px;
-        text-align: center;
+        position: relative;
+        animation: move 2s infinite alternate;
       }
       
-      @media (max-width: 600px) {
-        .responsive-div {
-          background-color: lightcoral;
+      @keyframes move {
+        from {
+          left: 0;
         }
-      }
-      
-      @media (min-width: 601px) {
-        .responsive-div {
-          background-color: lightseagreen;
+        to {
+          left: 100px;
         }
       }</code></pre>
       
-        <h3>Task 4: Flexbox Alignment</h3>
+        <h3>Task 3: CSS Pseudo-classes</h3>
         <p>
-          Create a Flexbox layout with items aligned to the center both vertically and horizontally. Use the following structure:
+          Style a list where every other item has a different background color. Use the following structure:
         </p>
-        <pre><code>&lt;div class="flex-center-container"&gt;
-        &lt;div class="flex-center-item"&gt;Centered Item&lt;/div&gt;
-      &lt;/div&gt;</code></pre>
+        <pre><code>&lt;ul class="pseudo-list"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;li&gt;Item 4&lt;/li&gt;
+      &lt;/ul&gt;</code></pre>
         <p>CSS:</p>
-        <pre><code>.flex-center-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
+        <pre><code>.pseudo-list li:nth-child(odd) {
         background-color: lightgray;
       }
       
-      .flex-center-item {
-        background-color: lightblue;
-        padding: 20px;
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
       }</code></pre>
       
-        <h3>Task 5: Grid Layout with Media Queries</h3>
+        <h3>Task 4: CSS Filters</h3>
         <p>
-          Create a Grid Layout that changes the number of columns based on the screen width. Use the following structure:
+          Apply a grayscale filter to an image and remove it on hover. Use the following structure:
         </p>
-        <pre><code>&lt;div class="responsive-grid-container"&gt;
-        &lt;div class="responsive-grid-item"&gt;1&lt;/div&gt;
-        &lt;div class="responsive-grid-item"&gt;2&lt;/div&gt;
-        &lt;div class="responsive-grid-item"&gt;3&lt;/div&gt;
-        &lt;div class="responsive-grid-item"&gt;4&lt;/div&gt;
-        &lt;div class="responsive-grid-item"&gt;5&lt;/div&gt;
-        &lt;div class="responsive-grid-item"&gt;6&lt;/div&gt;
-      &lt;/div&gt;</code></pre>
+        <pre><code>&lt;img src="path/to/image.jpg" alt="Sample Image" class="filter-image"&gt;</code></pre>
         <p>CSS:</p>
-        <pre><code>.responsive-grid-container {
-        display: grid;
-        grid-gap: 10px;
+        <pre><code>.filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
       }
       
-      @media (max-width: 600px) {
-        .responsive-grid-container {
-          grid-template-columns: repeat(2, 1fr);
-        }
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }</code></pre>
+      
+        <h3>Task 5: CSS Pseudo-elements</h3>
+        <p>
+          Create a blockquote with a decorative quote mark using pseudo-elements. Use the following structure:
+        </p>
+        <pre><code>&lt;blockquote class="quote"&gt;
+        This is a sample quote.
+      &lt;/blockquote&gt;</code></pre>
+        <p>CSS:</p>
+        <pre><code>.quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
       }
       
-      @media (min-width: 601px) {
-        .responsive-grid-container {
-          grid-template-columns: repeat(3, 1fr);
-        }
-      }
-      
-      .responsive-grid-item {
-        background-color: lightpink;
-        padding: 20px;
-        text-align: center;
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: lightgray;
       }</code></pre>
       </section>
       <!-- Add more sections for each workshop -->
