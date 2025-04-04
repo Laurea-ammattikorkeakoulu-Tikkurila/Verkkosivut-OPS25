@@ -20,12 +20,117 @@
   </header>
   <main>
     <section id="workshop4">
-      <h2>Workshop 4: Page Layout techniques</h2>
-
+      <h2>Workshop 4: Page Layout Techniques</h2>
+      <p>
+        In this workshop, you will learn basic page layout techniques using Flexbox, Grid Layout, Media Queries, and Semantic Elements.
+      </p>
+  
+      <h3>Task 1: Create a Flexbox Layout</h3>
+      <p>
+        Create a simple Flexbox layout with three boxes aligned horizontally. Use the following structure:
+      </p>
+      <pre><code>&lt;div class="flex-container"&gt;
+    &lt;div class="box"&gt;Box 1&lt;/div&gt;
+    &lt;div class="box"&gt;Box 2&lt;/div&gt;
+    &lt;div class="box"&gt;Box 3&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+      <p>CSS:</p>
+      <pre><code>.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .box {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+  }</code></pre>
+  
+      <h3>Task 2: Create a Grid Layout</h3>
+      <p>
+        Create a simple Grid Layout with two rows and three columns. Use the following structure:
+      </p>
+      <pre><code>&lt;div class="grid-container"&gt;
+    &lt;div class="grid-item"&gt;1&lt;/div&gt;
+    &lt;div class="grid-item"&gt;2&lt;/div&gt;
+    &lt;div class="grid-item"&gt;3&lt;/div&gt;
+    &lt;div class="grid-item"&gt;4&lt;/div&gt;
+    &lt;div class="grid-item"&gt;5&lt;/div&gt;
+    &lt;div class="grid-item"&gt;6&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+      <p>CSS:</p>
+      <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+  }</code></pre>
+  
+      <h3>Task 3: Add Media Queries</h3>
+      <p>
+        Use media queries to make a div change its background color based on the screen width. Use the following structure:
+      </p>
+      <pre><code>&lt;div class="responsive-box"&gt;Resize the window to see the effect&lt;/div&gt;</code></pre>
+      <p>CSS:</p>
+      <pre><code>.responsive-box {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .responsive-box {
+      background-color: lightcoral;
+    }
+  }
+  
+  @media (min-width: 601px) {
+    .responsive-box {
+      background-color: lightseagreen;
+    }
+  }</code></pre>
+  
+      <h3>Task 4: Use Semantic Elements</h3>
+      <p>
+        Create a simple page structure using semantic elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code>. Add navigation to the <code>&lt;header&gt;</code> element. Example:
+      </p>
+      <pre><code>&lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  
+  &lt;main&gt;
+    &lt;section id="about"&gt;
+      &lt;h2&gt;About Me&lt;/h2&gt;
+      &lt;p&gt;This is a paragraph about me.&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  
+  &lt;footer&gt;
+    &lt;p&gt;Copyright 2025&lt;/p&gt;
+  &lt;/footer&gt;</code></pre>
+      <h3>Task 5: Validate Your HTML and CSS</h3>
+      <p>
+        Validate your HTML and CSS files using the W3C Validation extension in Visual Studio Code. Follow these steps:
+      </p>
+      <ol>
+        <li>Install the <a href="https://marketplace.visualstudio.com/items?itemName=Umoxfo.vscode-w3cvalidation" target="_blank">W3C Validation Extension</a> in Visual Studio Code.</li>
+        <li>Open your HTML or CSS file in Visual Studio Code.</li>
+        <li>Run the W3C Validation extension by right-clicking in the editor and selecting <strong>W3C Validation</strong> or using the command palette (<code>Ctrl+Shift+P</code> or <code>Cmd+Shift+P</code> on Mac) and typing <strong>W3C Validation</strong>.</li>
+        <li>Review the validation results in the Problems panel and fix any errors or warnings reported.</li>
+      </ol>
     </section>
-
-    <!-- Add more sections for each workshop -->
-
   </main>
 
   <footer>
