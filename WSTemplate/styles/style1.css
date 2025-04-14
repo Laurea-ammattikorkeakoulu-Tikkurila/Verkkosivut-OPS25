@@ -36,8 +36,8 @@ footer {
 
 .button {
     display: inline-block;
-    background-color: #019dd5;
-    color: white;
+    background-color:white;
+    color: #019dd5;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
