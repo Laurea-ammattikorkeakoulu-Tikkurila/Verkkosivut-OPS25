@@ -20,8 +20,107 @@
   </header>
   <main>
     <section id="workshop5">
-      <h2>Workshop 5: Responsive design</h2>
-
+      <h2>Workshop 5: Responsive Design</h2>
+      <p>
+        In this workshop, you will learn the basics of responsive web design using media queries, flexible layouts, and responsive images.
+      </p>
+    
+      <h3>Task 1: Create a Responsive Layout</h3>
+      <p>
+        Create a responsive layout with two columns on larger screens and a single column on smaller screens. Use the following structure:
+      </p>
+      <pre><code>&lt;div class="responsive-container"&gt;
+      &lt;div class="column"&gt;Column 1&lt;/div&gt;
+      &lt;div class="column"&gt;Column 2&lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+      <p>CSS:</p>
+      <pre><code>.responsive-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      .column {
+        flex: 100%;
+      }
+    }</code></pre>
+    
+      <h3>Task 2: Add a Responsive Image</h3>
+      <p>
+        Add an image that resizes automatically to fit its container. Use the following structure:
+      </p>
+      <pre><code>&lt;img src="path/to/image.jpg" alt="Responsive Image" class="responsive-image"&gt;</code></pre>
+      <p>CSS:</p>
+      <pre><code>.responsive-image {
+      max-width: 100%;
+      height: auto;
+    }</code></pre>
+    
+      <h3>Task 3: Use Media Queries</h3>
+      <p>
+        Use media queries to change the background color of a div based on the screen width. Use the following structure:
+      </p>
+      <pre><code>&lt;div class="media-query-box"&gt;Resize the window to see the effect&lt;/div&gt;</code></pre>
+      <p>CSS:</p>
+      <pre><code>.media-query-box {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    @media (max-width: 600px) {
+      .media-query-box {
+        background-color: lightcoral;
+      }
+    }
+    
+    @media (min-width: 601px) {
+      .media-query-box {
+        background-color: lightblue;
+      }
+    }</code></pre>
+    
+      <h3>Task 4: Create a Responsive Navigation Bar</h3>
+      <p>
+        Create a navigation bar that collapses into a menu button on smaller screens. Use the following structure:
+      </p>
+      <pre><code>&lt;nav class="responsive-nav"&gt;
+      &lt;button class="menu-toggle"&gt;☰ Menu&lt;/button&gt;
+      &lt;ul class="nav-list"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;</code></pre>
+      <p>CSS:</p>
+      <pre><code>.responsive-nav .nav-list {
+      display: flex;
+      list-style: none;
+    }
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+      }
+    }</code></pre>
+    
+      <h3>Task 5: Validate Your Responsive Design</h3>
+      <p>
+        Test your responsive design using browser developer tools. Follow these steps:
+      </p>
+      <ol>
+        <li>Open your browser's developer tools (usually F12 or right-click and select "Inspect").</li>
+        <li>Switch to the "Responsive Design Mode" or "Device Toolbar" to simulate different screen sizes.</li>
+        <li>Ensure your layout and elements adjust correctly for various screen sizes.</li>
+      </ol>
     </section>
 
     <!-- Add more sections for each workshop -->
