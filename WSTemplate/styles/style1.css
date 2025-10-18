@@ -35,16 +35,26 @@ footer {
 }
 
 .button {
-    display: inline-block;
-    background-color:white;
+    display: block;
+    background-color: white;
     color: #019dd5;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 15px 40px; /* Increased padding for larger button */
+    border-radius: 8px;
+    font-size: 20px; /* Larger font size */
+    font-weight: bold; /* Make text bold */
     text-align: center;
-    margin: 20px auto; /* Add spacing around the button */
-    display: block; /* Center the button */
+    margin: 20px auto;
+    max-width: 250px; /* Control button width */
+    box-shadow: 0 4px 15px rgba(1, 157, 213, 0.4); /* Add shadow for depth */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.button:hover {
+    background-color: #019dd5;
+    color: white;
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 20px rgba(1, 157, 213, 0.6); /* Enhanced shadow on hover */
 }
 
 footer {
