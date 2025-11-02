@@ -1,56 +1,57 @@
 body {
-    background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Direct link to an image file */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
-    color: #333;
+  background-image: url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Direct link to an image file */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  color: #333;
 }
-header, main, footer {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+header,
+main,
+footer {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
 }
 header {
-    background-color: #019dd5;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #019dd5;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 main {
-    padding-bottom: 50px; /* Add space at the bottom of the main content */
+  padding-bottom: 50px; /* Add space at the bottom of the main content */
 }
 
-
 footer {
-    background-color: #019dd5;
-    color: white;
-    padding: 20px;
-    width: -webkit-fill-available;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
+  background-color: #019dd5;
+  color: white;
+  padding: 20px;
+  width: -webkit-fill-available;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
 }
 
 .button {
-    display: inline-block;
-    background-color:white;
-    color: #019dd5;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: center;
-    margin: 20px auto; /* Add spacing around the button */
-    display: block; /* Center the button */
+  display: inline-block;
+  background-color: white;
+  color: #019dd5;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin: 20px auto; /* Add spacing around the button */
+  display: block; /* Center the button */
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative; /* Ensure it doesn't overlap content */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative; /* Ensure it doesn't overlap content */
 }
