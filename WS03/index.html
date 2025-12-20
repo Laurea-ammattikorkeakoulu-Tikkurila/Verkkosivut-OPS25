@@ -107,7 +107,12 @@
       <p>
         Apply a grayscale filter to an image and remove it on hover. Use the following structure:
       </p>
-      <pre><code>&lt;img src="path/to/image.jpg" alt="Sample Image" class="filter-image"&gt;</code></pre>
+      <pre><code>&lt;img src="./images/image.jpg" alt="Sample Image" class="filter-image"&gt;</code></pre>
+      <p>
+        <strong>Check the image:</strong> Verify that the <code>src</code> path and image filename are correct.
+        If the image doesn't load, open DevTools (F12) → Network/Console to inspect the error and fix the path or
+        filename.
+      </p>
       <p>CSS:</p>
       <pre><code>.filter-image {
         filter: grayscale(100%);
@@ -117,7 +122,6 @@
       .filter-image:hover {
         filter: grayscale(0%);
       }</code></pre>
-
       <h3>Task 5: CSS Pseudo-elements</h3>
       <p>
         Create a blockquote with a decorative quote mark using pseudo-elements. Use the following structure:
